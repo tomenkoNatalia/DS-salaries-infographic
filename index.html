@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Salaries</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet"
+          href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.flexmonster.com/theme/dark/flexmonster.min.css" />
+  </head>
+
+  <body>
+    <script src="https://cdn.flexmonster.com/flexmonster.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://cdn.flexmonster.com/lib/flexmonster.highcharts.js"></script>
+
+    <h1>Data Science Salaries in 2022</h1>
+    <div id="container1" class="group">
+      <div id="job-title">
+        <h2>By Job Title</h2>
+        <div class="group">
+          <div class="chart" id="column-chart-us"></div>
+          <div class="chart" id="column-chart-world"></div>
+        </div>
+
+      </div>
+
+      <div id="experience">
+        <h2>By Experience Level</h2>
+        <div class="group">
+          <div id="salary-progression" class="chart"></div>
+          <div id="experience-job" class="chart"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="container2" class="group">
+      <div id="pivot-container" class="chart" style="align-content: center"></div>
+
+      <div id="top-bottom-countries">
+        <h2>Best and worst paying countries</h2>
+        <div class="group">
+          <div class="chart" id="top-countries"></div>
+          <div class="chart" id="last-countries"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="container3" class="group">
+      <div>
+        <h2>By Industry</h2>
+        <div id="industries" class="chart"></div>
+      </div>
+
+
+      <div>
+        <h2>Gender Pay Gap</h2>
+        <div id="gender" class="chart"></div>
+      </div>
+    </div>
+
+    <script src="js/infographic.js"></script>
+  </body>
+  </html>

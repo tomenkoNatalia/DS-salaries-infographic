@@ -1,0 +1,81 @@
+* {
+    font-family: 'Cinzel', serif;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main-color: #8667f5;
+    --second-color: #ff6090;
+    --text-color: #f5f5ff;
+    --bg-color: #161620;
+    --big-font: 5rem;
+    --h2-font: 2.5rem;
+    --p-font: 1rem;
+
+}
+
+*::selection{
+    background-color: var(--main-color);
+    color: #fff
+}
+
+body{
+    color: var(--text-color);
+    background: var(--bg-color)
+}
+
+.group {
+    width: available;
+    display: grid;
+    align-items: inherit;
+    grid-template-columns: 50% 50%;
+}
+
+#container1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    height: 500px;
+}
+
+#container2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    height: 500px;
+}
+
+#pivot {
+    display: flex;
+    justify-content: center;
+}
+
+#pivot-container {
+    border: 1px solid var(--main-color);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+h2 {
+    color: var(--main-color);
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+h1 {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: underline overline var(--second-color);
+}
+
+.chart {
+    padding: 30px 30px 30px 30px;
+}
+
