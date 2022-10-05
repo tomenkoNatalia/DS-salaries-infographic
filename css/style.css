@@ -75,6 +75,13 @@ h1 {
     text-decoration: underline overline var(--second-color);
 }
 
+p {
+    padding-top: 30px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
 .chart {
     padding: 30px 30px 30px 30px;
 }

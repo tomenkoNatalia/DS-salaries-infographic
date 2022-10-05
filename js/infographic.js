@@ -49,7 +49,7 @@ let pivot = new Flexmonster({
     }
 });
 
-function setChartOptions(coloring, title) {
+function setChartOptions(coloring) {
     Highcharts.setOptions({
         colors: coloring,
         chart: {
@@ -68,12 +68,6 @@ function setChartOptions(coloring, title) {
                 style: {
                     color: 'white'
                 }
-            }
-        },
-        title: {
-            text: title,
-            style: {
-                color: '#FFFFFF'
             }
         }
     });
@@ -114,11 +108,11 @@ function specializationsChartUS() {
         }
     },
         function(chartConfig) {
-            setChartOptions([ '#ff6090', '#8667f5'], 'in the US')
+            setChartOptions([ '#ff6090', '#8667f5'])
             Highcharts.chart('column-chart-us', chartConfig);
         },
         function(chartConfig) {
-            setChartOptions([ '#ff6090', '#8667f5'], 'in the US')
+            setChartOptions([ '#ff6090', '#8667f5'])
             Hightcharts.chart('column-chart-us', chartConfig);
         });
 }
